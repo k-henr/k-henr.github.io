@@ -24,7 +24,7 @@ export default function Page() {
                 <h1>About me</h1>
                 <LinkWithIcon
                     src="Icons/github.svg"
-                    href="https://github.com/karlhenriksson"
+                    href="https://github.com/k-henr"
                     target="_blank"
                 >
                     Github: k-henr
