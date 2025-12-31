@@ -1,0 +1,242 @@
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        TODO
+    }
+} */
+
+/* Configurable colours */
+:root {
+    --headerBackground: rgb(160, 160, 160);
+    --headerDetails: rgb(120, 120, 120);
+    --headerDisclaimer: rgb(60, 60, 60);
+
+    --menuItemText: black;
+    --menuItemHover: rgb(90, 90, 90);
+    --menuExpandFolderHover: rgb(120, 120, 120);
+
+    --contentBackground: rgb(195, 223, 224);
+    --links: rgb(11, 78, 133);
+}
+
+.page :not(h1, h2, h3, .imageCaption),
+.menuItemDisplay * {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.hidden {
+    display: none;
+}
+.hiddenMobile {
+    display: none;
+}
+
+body {
+    background: var(--contentBackground); /* Fix overscrolling color */
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+#header {
+    background-color: var(--headerBackground);
+
+    padding: 10px;
+}
+#mainHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Branding styles */
+#branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none; /* Get rid of the underline from using an a tag */
+}
+#branding:hover {
+    cursor: pointer;
+}
+#brandingText {
+    margin: 15px;
+    color: rgb(240, 248, 248);
+    font-size: 20px;
+}
+#brandingImage {
+    width: 40px;
+    border: 1px solid var(--headerDetails);
+}
+
+#openMenuButton {
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid var(--headerDetails);
+}
+
+.headerDisclaimer {
+    color: var(--headerDisclaimer);
+    font-size: small;
+    padding: 10px 20px;
+    font-style: italic;
+    text-align: center;
+}
+.mutedLink {
+    color: unset;
+    font-size: unset;
+}
+
+/* Lines between menu items */
+.menuItem {
+    border-top: 1px solid var(--headerDetails);
+}
+#menu > .menuItem:last-child {
+    border-bottom: 1px solid var(--headerDetails);
+}
+
+.menuItemDisplay {
+    display: flex;
+    height: 30px;
+    padding: 5px;
+}
+.menuItemDisplay > a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    color: var(--menuItemText);
+    text-decoration: none;
+}
+.menuItemDisplay > a:hover {
+    color: var(--menuItemHover);
+}
+.menuItemDisplay > img {
+    height: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+/* Make folders add an indent for their children */
+.folderContent {
+    padding-left: 20px;
+}
+
+/* === MAIN PAGE === */
+
+#content {
+    background-color: var(--contentBackground);
+    flex: 2;
+}
+
+a {
+    color: var(--links);
+}
+
+.page {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imageContainer > img {
+    width: 100%;
+    max-width: 7cm; /* TODO: Don't hardcode? */
+}
+.imageCaption {
+    display: block;
+    margin: 10px;
+
+    text-align: center;
+    font-size: small;
+}
+
+.code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: rgb(235, 235, 240);
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.pageIconLinkList {
+    margin-bottom: 10px;
+}
+.pageIconLinkListElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+
+    color: unset;
+    text-decoration: none;
+}
+
+.pageIconLinkListElement > img {
+    height: 40px;
+}
+
+.pageIconLinkLabel {
+    margin: 0 30px;
+    color: var(--links);
+    text-decoration: underline;
+}
+
+/* Medium size */
+@media (min-width: 500px) {
+    .page {
+        margin: 30px;
+        padding: 60px;
+    }
+}
+
+/* Large size */
+@media (min-width: 800px) {
+    .hiddenMobile {
+        display: unset;
+    }
+
+    body {
+        flex-direction: row;
+    }
+
+    .page :not(h1, h2, h3, .imageCaption),
+    .menuItemDisplay * {
+        font-size: calc(max(1.25vw, 18px));
+    }
+
+    #header {
+        flex: 1;
+        max-width: 370px;
+    }
+
+    #openMenuButton {
+        display: none;
+    }
+
+    #menu {
+        margin: 15px;
+    }
+
+    .menuItemDisplay > img:hover {
+        background-color: var(--menuExpandFolderHover);
+    }
+
+    .page {
+        margin: 60px;
+    }
+}
