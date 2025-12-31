@@ -65,7 +65,7 @@ export default function RootLayout({
                     <div
                         className={`headerDisclaimer ${contentFont.className}`}
                     >
-                        "Want to contact me regarding the website? DM me on
+                        Want to contact me regarding the website? DM me on
                         Discord (
                         <a
                             className="mutedLink"
