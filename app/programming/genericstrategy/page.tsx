@@ -1,4 +1,5 @@
 import { ImageContainer } from "@/app/_components/imageContainer";
+import { LinkWithIcon } from "@/app/_components/linkWithIcon";
 
 export default function Page() {
     return (
@@ -35,18 +36,23 @@ export default function Page() {
                     projects, which felt great.
                 </p>
                 <p>
-                    I'm now hosting this game on a GHP website, see{" "}
-                    <a href="https://k-henr.github.io/genericStrategyGame/index.html">
-                        this link
-                    </a>{" "}
-                    to play the game! It's not the prettiest, and I've left in
-                    all the bugs that I didn't have time to catch. I also made a
-                    level editor, which can be found{" "}
-                    <a href="https://k-henr.github.io/genericStrategyGame/levelBuilder.html">
-                        here
-                    </a>
-                    .
+                    I'm now hosting this game on a GHP website, click the link
+                    below to play the game! It's not the prettiest, and I've
+                    left in all the bugs that I didn't have time to catch. I
+                    also made a level editor.
                 </p>
+                <LinkWithIcon
+                    href="https://k-henr.github.io/genericStrategyGame/index.html"
+                    src="/Icons/webGlobe.svg"
+                >
+                    Generic Strategy Game
+                </LinkWithIcon>
+                <LinkWithIcon
+                    href="https://k-henr.github.io/genericStrategyGame/levelBuilder.html"
+                    src="/Icons/webGlobe.svg"
+                >
+                    Generic Strategy Game - level editor
+                </LinkWithIcon>
             </div>
         </>
     );

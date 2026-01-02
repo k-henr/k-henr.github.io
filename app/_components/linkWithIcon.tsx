@@ -12,9 +12,9 @@ export function LinkWithIcon({
         | undefined;
 }>) {
     return (
-        <a href={href} className="pageIconLinkListElement" target={target}>
+        <a href={href} className="linkWithIcon" target={target}>
             <img src={src} />
-            <p className="pageIconLinkLabel">{children}</p>
+            <p>{children}</p>
         </a>
     );
 }

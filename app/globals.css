@@ -173,25 +173,19 @@ a {
     padding: 1px;
 }
 
-.pageIconLinkList {
-    margin-bottom: 10px;
-}
-.pageIconLinkListElement {
+.linkWithIcon {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0px;
 
     color: unset;
     text-decoration: none;
 }
-
-.pageIconLinkListElement > img {
+.linkWithIcon > img {
     height: 40px;
 }
-
-.pageIconLinkLabel {
-    margin: 0 30px;
+.linkWithIcon > p {
+    margin: 0 15px;
     color: var(--links);
     text-decoration: underline;
 }
@@ -238,5 +232,9 @@ a {
 
     .page {
         margin: 60px;
+    }
+
+    .linkWithIcon {
+        margin: 10px 0;
     }
 }

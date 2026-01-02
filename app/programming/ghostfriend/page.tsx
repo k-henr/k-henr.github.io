@@ -1,4 +1,5 @@
 import { ImageContainer } from "@/app/_components/imageContainer";
+import { LinkWithIcon } from "@/app/_components/linkWithIcon";
 
 export default function Page() {
     return (
@@ -46,12 +47,13 @@ export default function Page() {
                     damage. This solved the issue, and also let me add a few
                     interesting ghost-related abilities.
                 </p>
-                <p>
-                    Try out the game{" "}
-                    <a href="https://k-henr.github.io/theGhostIsYourFriend/index.html">
-                        here!
-                    </a>
-                </p>
+                <p>Try out the game below!</p>
+                <LinkWithIcon
+                    href="https://k-henr.github.io/theGhostIsYourFriend/index.html"
+                    src="/Icons/webGlobe.svg"
+                >
+                    The Ghost is your Friend
+                </LinkWithIcon>
             </div>
         </>
     );
