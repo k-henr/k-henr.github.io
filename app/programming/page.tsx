@@ -111,8 +111,9 @@ export default function Page() {
                     annoying. I'm doing some Java on the side right now, and
                     I'll see if I start liking it more than C#. Additionally,
                     I've tried learning more about modern web development using
-                    frameworks like Next.js for this very site.
-                    <br />
+                    Next.js.
+                </p>
+                <p>
                     I've also briefly pondered Rust, but that seems like an
                     amalgamation of paradigms that doesn't know what it wants,
                     and I want my inheritance.
