@@ -1,0 +1,1 @@
+import{B as e,C as t,D as n,d as r,f as i,k as a,m as o,o as s}from"./ClnT2LFb.js";import"./xihTtKlq.js";var c=o(`<figure class="svelte-ksdz3v"><img class="svelte-ksdz3v"/> <small> </small></figure>`);function l(o,l){var u=c(),d=n(u),f=a(d,2),p=n(f,!0);e(f),e(u),t(()=>{s(d,`src`,l.src),s(d,`alt`,l.alt),r(p,l.caption)}),i(o,u)}export{l as t};

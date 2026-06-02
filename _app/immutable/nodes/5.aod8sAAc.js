@@ -1,0 +1,10 @@
+import{B as e,D as t,f as n,h as r,k as i,m as a,z as o}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKlq.js";import"../chunks/CTw48tnL.js";import{t as s}from"../chunks/DDVTV_j-.js";var c=a(`<section><h1>Tetris in Desmos</h1> <p> <a href="https://help.desmos.com/hc/en-us/articles/4407725009165-Actions">Desmos actions</a>, which are a way to update variables automatically. After I'd learnt
+        some more desmos tricks, I made another one. So I have two versions, the
+        first of which is still slighly more performant due to fewer features, but
+        the second one is still much prettier and better in general.</p> <p> <code>desmos.com/[calculatorType]/[hash]</code> <a href="https://desmos.com/calculator/tetrisgame">https://desmos.com/calculator/tetrisgame</a> </p> <p>Links:</p> <!> <!></section>`);function l(a){var l=c(),u=i(t(l),2),d=t(u);d.nodeValue=`The first of these was made as an exercise to learn  `,o(2),e(u);var f=i(u,2),p=t(f);p.nodeValue=`Another interesting fact: All Desmos graphs have a link that looks like  `;var m=i(p,2);m.nodeValue=`, where the hash is usually a
+        random string of letters and numbers. But there's a way to set the hash
+        yourself, as long as it's alphanumeric and either 10 or 20 characters long.
+        The method is kept somewhat secret to avoid exhausting all the "good" hashes,
+        and it's a relatively inconvenient process, but I've managed to nab myself
+        the "tetrisgame" hash. So  `;var h=i(m,2);h.nodeValue=` 
+        now leads to my tetris game (version 2).`,e(f);var g=i(f,4);s(g,{href:`https://www.desmos.com/calculator/78b054d578`,src:`/icons/desmos.ico`,target:`_blank`,children:(e,t)=>{o(),n(e,r(`Desmos Tetris, version 1`))},$$slots:{default:!0}}),s(i(g,2),{href:`https://www.desmos.com/calculator/tetrisgame`,src:`/icons/desmos.ico`,target:`_blank`,children:(e,t)=>{o(),n(e,r(`Desmos Tetris, version 2`))},$$slots:{default:!0}}),e(l),n(a,l)}export{l as component};
