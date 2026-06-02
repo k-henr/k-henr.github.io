@@ -11,7 +11,7 @@
             <a href="/projects/ghostfriend">The Ghost is your Friend</a>
         </li>
         <li>
-            <a href="/projects/unhelpful-calculator">Unhelpful calculator</a>
+            <a href="/projects/unhelpfulcalculator">Unhelpful calculator</a>
         </li>
         <li>
             <a href="/projects/3desmos">3Desmos</a>
