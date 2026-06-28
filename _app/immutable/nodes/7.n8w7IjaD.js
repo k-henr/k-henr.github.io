@@ -1,4 +1,4 @@
-import{B as e,D as t,f as n,h as r,k as i,m as a,z as o}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKlq.js";import"../chunks/CTw48tnL.js";import{t as s}from"../chunks/DDVTV_j-.js";import{t as c}from"../chunks/BHJZLDRs.js";var l=a(`<section><h1>Unhelpful calculator</h1> <p>This is a pretty normal calculator, with support for variables, functions and
+import{B as e,D as t,f as n,h as r,k as i,m as a,z as o}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKlq.js";import"../chunks/CTw48tnL.js";import{t as s}from"../chunks/DDVTV_j-.js";import{t as c}from"../chunks/CxUC8uke.js";var l=a(`<section><h1>Unhelpful calculator</h1> <p>This is a pretty normal calculator, with support for variables, functions and
         a few built-in constants. However, the calculator doesn't like maths and will
         complain at you if the expression you wrote is too complicated and hard to
         figure out. You can ask it to try again, and it'll have a slightly higher

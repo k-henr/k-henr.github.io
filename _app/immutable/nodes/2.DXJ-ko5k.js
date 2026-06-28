@@ -6,4 +6,4 @@ import{f as e,m as t,z as n}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKl
         summer 2026) also trying to learn more about electronics and breadboard
         circuits.</p> <p>To my memory, I have programmed since when I was around 8 years old, mostly
         just for fun. But occasionally I've been able to find applications for my
-        programs.</p> <p>Familiar programming languages:</p> <ul><li>C#</li> <li>Java</li> <li>Processing</li> <li>Static HTML/CSS/JS</li> <li>Python</li> <li>Very little sveltekit</li> <li>Even less nextjs</li></ul> <p>See my projects <a href="/projects">here</a>.</p></section>`,1);function i(t){var i=r();n(2),e(t,i)}export{i as component};
+        programs.</p> <p>Programming languages that I <del>like</del> <b>have used:</b></p> <ul><li>C#</li> <li>Java</li> <li>Processing</li> <li>Static HTML/CSS/JS</li> <li>Python</li> <li>Very little sveltekit</li> <li>Even less nextjs</li></ul> <p>See some of my projects <a href="/projects">here</a>.</p></section>`,1);function i(t){var i=r();n(2),e(t,i)}export{i as component};

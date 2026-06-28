@@ -1,4 +1,4 @@
-import{B as e,D as t,f as n,h as r,k as i,m as a,z as o}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKlq.js";import"../chunks/CTw48tnL.js";import{t as s}from"../chunks/DDVTV_j-.js";import{t as c}from"../chunks/BHJZLDRs.js";var l=a(`<section><h1>The Ghost is your Friend</h1> <p>This project was one of two examinating projects that I made in a high school
+import{B as e,D as t,f as n,h as r,k as i,m as a,z as o}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKlq.js";import"../chunks/CTw48tnL.js";import{t as s}from"../chunks/DDVTV_j-.js";import{t as c}from"../chunks/CxUC8uke.js";var l=a(`<section><h1>The Ghost is your Friend</h1> <p>This project was one of two examinating projects that I made in a high school
         programming course. I wasn't quite able to get the second one finished by the
         end of the course, which is why I'm not linking it here, but we were only
         really supposed to make one anyways. It's made on a single canvas screen
