@@ -64,6 +64,7 @@
         padding: unset;
         background-color: unset;
         border: unset;
+        cursor: pointer;
         aspect-ratio: 1;
         width: 2rem;
         height: 2rem;
