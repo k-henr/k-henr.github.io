@@ -29,7 +29,7 @@
         just for fun. But occasionally I've been able to find applications for my
         programs.
     </p>
-    <p>Programming languages that I <del>like</del> <b>have used:</b></p>
+    <p>Programming languages that I <del>like</del> <i>have used</i>:</p>
     <ul>
         <li>C#</li>
         <li>Java</li>

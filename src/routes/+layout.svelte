@@ -4,8 +4,15 @@
 
     let { children } = $props();
 
-    let menuIsOpen = $state(true);
+    let menuIsOpen = $state(false);
     function toggleMenu() { menuIsOpen = !menuIsOpen; }
+    function menuAttacher(el: Element) {
+        if(menuIsOpen) {
+            el.classList.remove("hidden-mobile");
+        } else {
+            el.classList.add("hidden-mobile");
+        }
+    }
 </script>
 
 <svelte:head>
@@ -15,19 +22,20 @@
 
 <!-- Menu -->
 <div id="navbar">
-    <div>
+    <header>
         <a href="/">
             <img src="/logo.png" alt="My go-to profile" />
             <p>khenr</p>
         </a>
         <button onclick={toggleMenu} aria-label="toggle menu visibility"><img src="/icons/menu.svg" alt="menu"/></button>
-    </div>
-    {#if menuIsOpen}
-    <nav>
-        <MenuItem name="Home" href="/" />
-        <MenuItem name="Projects" href="/projects">
-            <MenuItem name="The Ghost is your Friend" href="/projects/ghostfriend" />
-            <MenuItem
+    </header>
+    <div {@attach menuAttacher}>
+
+        <nav>
+            <MenuItem name="Home" href="/" />
+            <MenuItem name="Projects" href="/projects">
+                <MenuItem name="The Ghost is your Friend" href="/projects/ghostfriend" />
+                <MenuItem
                 name="Unhelpful calculator"
                 href="/projects/unhelpfulcalculator"
             />
@@ -41,7 +49,7 @@
         khenr!
     </i></small
     >
-    {/if}
+    </div>
 </div>
 <!-- Main page -->
 <main>
@@ -78,7 +86,7 @@
 
             background-color: var(--navbar-bg);
             
-            & > div {
+            & > header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -118,29 +126,35 @@
                     }
                 }
             }
-            & > nav {
+            & > div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                & > nav {
                 width: 100%;
-            }
-            & > small {
-                color: var(--navbar-fineprint);
-                width: 80%;
-                text-align: center;
+                }
+                & > small {
+                    color: var(--navbar-fineprint);
+                    width: 80%;
+                    text-align: center;
+                }
             }
         }
         & > main {
             flex: 1;
             & > article {
-                padding: 2rem;
+                padding: 1rem;
                 background-color: var(--content-bg);
                 height: 100%;
                 box-sizing: border-box;
 
                 & > :global(section) {
                     background-color: var(--article-bg);
-                    padding: 2rem;
+                    padding: 1rem;
                     font-size: larger;
                     &:not(:first-child) {
-                        margin-top: 4rem;
+                        margin-top: 1rem;
                     }
                 }
             }
@@ -151,6 +165,12 @@
         color: var(--links);
     }
 
+    @media screen and (max-width: 800px) {
+        :global(.hidden-mobile) {
+            display: none !important;
+        }
+    }
+
     @media screen and (min-width: 800px) {
         :global(body) {
             display: flex;
@@ -159,7 +179,7 @@
                 width: 20vw;
                 min-width: 20rem;
 
-                & > * > button {
+                & > header > button {
                     display: none !important;
                 }
             }
@@ -169,8 +189,13 @@
 
                 & > :global(section) {
                     padding: 4rem;
+                    &:not(:first-child) { margin-top: 4rem; }
                 }
             }
+        }
+
+        :global(.hidden-mobile) {
+            display: unset;
         }
     }
 
