@@ -10,14 +10,17 @@
 
 <style>
     figure {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin: 1rem;
     }
     img {
-        /* todo: make this a prop */
+        /* todo: make the max-bounds be props */
         max-width: 14cm;
+        max-height: 7cm;
+        width: 100%;
+        object-fit: contain;
     }
 </style>

@@ -3,6 +3,9 @@
     import MenuItem from "$lib/components/MenuItem.svelte";
 
     let { children } = $props();
+
+    let menuIsOpen = $state(false);
+    function toggleMenu() { menuIsOpen = !menuIsOpen; }
 </script>
 
 <svelte:head>
@@ -12,10 +15,13 @@
 
 <!-- Menu -->
 <div id="navbar">
-    <a href="/">
-        <img src="/logo.png" alt="My go-to profile" />
-        <p>khenr</p>
-    </a>
+    <div>
+        <a href="/">
+            <img src="/logo.png" alt="My go-to profile" />
+            <p>khenr</p>
+        </a>
+        <button onclick={toggleMenu} aria-label="toggle menu visibility"><img src="/icons/menu.svg" alt="menu"/></button>
+    </div>
     <nav>
         <MenuItem name="Home" href="/" />
         <MenuItem name="Projects" href="/projects">
@@ -48,6 +54,10 @@
         src: url("/fonts/Inter_24pt-Regular.ttf");
     }
 
+    :global(html) {
+        background-color: var(--content-bg);
+    }
+
     :global(body) {
         font-family: Inter;
 
@@ -55,31 +65,55 @@
         padding: 0px;
         min-height: 100vh;
 
-        display: flex;
+        display: block;
+
         & > #navbar {
-            width: 20vw;
-            min-width: 20rem;
             padding: 1rem;
+            gap: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
 
             background-color: var(--navbar-bg);
-            & > a {
+            
+            & > div {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 1rem;
-                text-decoration: none; /* Get rid of the underline from using an a tag */
-                & > img {
-                    width: 40px;
-                    border: var(--menu-separator);
-                    box-sizing: border-box;
+                gap: 3rem;
+                width: 100%;
+                & > a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    text-decoration: none; /* Get rid of the underline from using an a tag */
+
+                    & > img {
+                        width: 40px;
+                        border: var(--menu-separator);
+                        box-sizing: border-box;
+                    }
+                    & > p {
+                        font-size: x-large;
+                        color: var(--profile-text);
+                    }
                 }
-                & > p {
-                    font-size: x-large;
-                    color: var(--profile-text);
+                & > button {
+                    display: block;
+                    padding: unset;
+                    background-color: unset;
+                    border: unset;
+                    cursor: pointer;
+                    aspect-ratio: 1;
+                    height: 2rem;
+                    border: 1px solid var(--menu-item-hover);
+                    &:hover {
+                        background-color: var(--menu-expand-btn-hover-bg);
+                    }
+                    & > img {
+                        width: 100%;
+                    }
                 }
             }
             & > nav {
@@ -94,14 +128,14 @@
         & > main {
             flex: 1;
             & > article {
-                padding: 4rem;
+                padding: 2rem;
                 background-color: var(--content-bg);
                 height: 100%;
                 box-sizing: border-box;
 
                 & > :global(section) {
                     background-color: var(--article-bg);
-                    padding: 4rem;
+                    padding: 2rem;
                     font-size: larger;
                     &:not(:first-child) {
                         margin-top: 4rem;
@@ -113,6 +147,29 @@
 
     :global(a) {
         color: var(--links);
+    }
+
+    @media screen and (min-width: 800px) {
+        :global(body) {
+            display: flex;
+
+            & > #navbar {
+                width: 20vw;
+                min-width: 20rem;
+
+                & > * > button {
+                    display: none !important;
+                }
+            }
+
+            & > main > article {
+                padding: 4rem;
+
+                & > :global(section) {
+                    padding: 4rem;
+                }
+            }
+        }
     }
 
     :global(:root) {

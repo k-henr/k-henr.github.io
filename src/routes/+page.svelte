@@ -29,7 +29,7 @@
         just for fun. But occasionally I've been able to find applications for my
         programs.
     </p>
-    <p>Familiar programming languages:</p>
+    <p>Programming languages that I <del>like</del> <b>have used:</b></p>
     <ul>
         <li>C#</li>
         <li>Java</li>
@@ -40,6 +40,6 @@
         <li>Even less nextjs</li>
     </ul>
     <p>
-        See my projects <a href="/projects">here</a>.
+        See some of my projects <a href="/projects">here</a>.
     </p>
 </section>
