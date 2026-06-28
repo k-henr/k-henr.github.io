@@ -4,7 +4,7 @@
 
     let { children } = $props();
 
-    let menuIsOpen = $state(false);
+    let menuIsOpen = $state(true);
     function toggleMenu() { menuIsOpen = !menuIsOpen; }
 </script>
 
@@ -22,6 +22,7 @@
         </a>
         <button onclick={toggleMenu} aria-label="toggle menu visibility"><img src="/icons/menu.svg" alt="menu"/></button>
     </div>
+    {#if menuIsOpen}
     <nav>
         <MenuItem name="Home" href="/" />
         <MenuItem name="Projects" href="/projects">
@@ -35,11 +36,12 @@
         </MenuItem>
     </nav>
     <small
-        ><i>
-            Want to chat? Send me an email at mail@khenr.se or find me on discord as
-            khenr!
-        </i></small
+    ><i>
+        Want to chat? Send me an email at mail@khenr.se or find me on discord as
+        khenr!
+    </i></small
     >
+    {/if}
 </div>
 <!-- Main page -->
 <main>
