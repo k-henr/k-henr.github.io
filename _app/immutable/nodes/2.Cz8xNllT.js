@@ -1,4 +1,4 @@
-import{f as e,m as t,z as n}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKlq.js";import"../chunks/CTw48tnL.js";var r=t(`<section><h1>About this webpage</h1> <p>This website has two main reasons to be alive. It is 1) an exercise in web
+import{B as e,h as t,p as n}from"../chunks/DshsZ34Z.js";import"../chunks/xihTtKlq.js";import"../chunks/BsfnhY1e.js";var r=t(`<section><h1>About this webpage</h1> <p>This website has two main reasons to be alive. It is 1) an exercise in web
         development, and 2) a place where I collect various projects and things I
         want to save in one spot.</p> <p>It has gone through quite a lot of iterations, using various frameworks and
         hosting solutions of varying quality, but is currently hosted on github pages
@@ -6,4 +6,4 @@ import{f as e,m as t,z as n}from"../chunks/ClnT2LFb.js";import"../chunks/xihTtKl
         summer 2026) also trying to learn more about electronics and breadboard
         circuits.</p> <p>To my memory, I have programmed since when I was around 8 years old, mostly
         just for fun. But occasionally I've been able to find applications for my
-        programs.</p> <p>Programming languages that I <del>like</del> <b>have used:</b></p> <ul><li>C#</li> <li>Java</li> <li>Processing</li> <li>Static HTML/CSS/JS</li> <li>Python</li> <li>Very little sveltekit</li> <li>Even less nextjs</li></ul> <p>See some of my projects <a href="/projects">here</a>.</p></section>`,1);function i(t){var i=r();n(2),e(t,i)}export{i as component};
+        programs.</p> <p>Programming languages that I <del>like</del> <i>have used</i>:</p> <ul><li>C#</li> <li>Java</li> <li>Processing</li> <li>Static HTML/CSS/JS</li> <li>Python</li> <li>Very little sveltekit</li> <li>Even less nextjs</li></ul> <p>See some of my projects <a href="/projects">here</a>.</p></section>`,1);function i(t){var i=r();e(2),n(t,i)}export{i as component};

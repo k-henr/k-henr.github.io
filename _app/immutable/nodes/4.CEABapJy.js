@@ -1,0 +1,6 @@
+import{A as e,B as t,O as n,V as r,g as i,h as a,p as o}from"../chunks/DshsZ34Z.js";import"../chunks/xihTtKlq.js";import"../chunks/BsfnhY1e.js";import{t as s}from"../chunks/WoWyOXHp.js";var c=a(`<section><h1>3Desmos</h1> <p>These two graphs are the result of me playing with 3D projections in desmos,
+        which is a bit of a rite of passage in the desmos community. The first one
+        was my first "big" project in desmos, and I didn't know anything about
+        projective geometry when I made it, meanning that it's a bit of a mess. The
+        second one is more stable and mathematically correct. I'm linking to both,
+        but I vastly prefer the second graph.</p> <p>Links:</p> <!> <!></section>`);function l(a){var l=c(),u=e(n(l),6);s(u,{href:`https://www.desmos.com/calculator/893e6198ae`,src:`/icons/desmos.ico`,target:`_blank`,children:(e,n)=>{t(),o(e,i(`3Desmos, version 1`))},$$slots:{default:!0}}),s(e(u,2),{href:`https://www.desmos.com/calculator/b37c222d99`,src:`/icons/desmos.ico`,target:`_blank`,children:(e,n)=>{t(),o(e,i(`3Desmos, version 2`))},$$slots:{default:!0}}),r(l),o(a,l)}export{l as component};
