@@ -30,7 +30,6 @@
         <button onclick={toggleMenu} aria-label="toggle menu visibility"><img src="/icons/menu.svg" alt="menu"/></button>
     </header>
     <div {@attach menuAttacher}>
-
         <nav>
             <MenuItem name="Home" href="/" />
             <MenuItem name="Projects" href="/projects">

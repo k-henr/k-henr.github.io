@@ -8,7 +8,7 @@
         These two graphs are the result of me playing with 3D projections in desmos,
         which is a bit of a rite of passage in the desmos community. The first one
         was my first "big" project in desmos, and I didn't know anything about
-        projective geometry when I made it, meanning that it's a bit of a mess. The
+        projective geometry when I made it, meaning that it's a bit of a mess. The
         second one is more stable and mathematically correct. I'm linking to both,
         but I vastly prefer the second graph.
     </p>

@@ -6,11 +6,10 @@
 <section>
     <h1>Unhelpful calculator</h1>
     <p>
-        This is a pretty normal calculator, with support for variables, functions and
-        a few built-in constants. However, the calculator doesn't like maths and will
-        complain at you if the expression you wrote is too complicated and hard to
-        figure out. You can ask it to try again, and it'll have a slightly higher
-        tolerance for hard maths.
+        This is a pretty normal calculator, with support for variables and functions
+        as well as a few built-in constants. However, the calculator doesn't like
+        maths and will complain at you if the expression you wrote is too complicated
+        and hard to figure out. You can ask it to try again though.
     </p>
     <ImageWithCaption
         src="/files/unhelpfulcalc/hardmaths.png"
