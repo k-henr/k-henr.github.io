@@ -5,9 +5,11 @@
     let { children } = $props();
 
     let menuIsOpen = $state(false);
-    function toggleMenu() { menuIsOpen = !menuIsOpen; }
+    function toggleMenu() {
+        menuIsOpen = !menuIsOpen;
+    }
     function menuAttacher(el: Element) {
-        if(menuIsOpen) {
+        if (menuIsOpen) {
             el.classList.remove("hidden-mobile");
         } else {
             el.classList.add("hidden-mobile");
@@ -27,27 +29,32 @@
             <img src="/logo.png" alt="My go-to profile" />
             <p>khenr</p>
         </a>
-        <button onclick={toggleMenu} aria-label="toggle menu visibility"><img src="/icons/menu.svg" alt="menu"/></button>
+        <button onclick={toggleMenu} aria-label="toggle menu visibility"
+            ><img src="/icons/menu.svg" alt="menu" /></button
+        >
     </header>
     <div {@attach menuAttacher}>
         <nav>
             <MenuItem name="Home" href="/" />
             <MenuItem name="Projects" href="/projects">
-                <MenuItem name="The Ghost is your Friend" href="/projects/ghostfriend" />
                 <MenuItem
-                name="Unhelpful calculator"
-                href="/projects/unhelpfulcalculator"
-            />
-            <MenuItem name="Tetris" href="/projects/desmostetris" />
-            <MenuItem name="3Desmos" href="/projects/3desmos" />
-        </MenuItem>
-    </nav>
-    <small
-    ><i>
-        Want to chat? Send me an email at mail@khenr.se or find me on discord as
-        khenr!
-    </i></small
-    >
+                    name="The Ghost is your Friend"
+                    href="/projects/ghostfriend"
+                />
+                <MenuItem
+                    name="Unhelpful calculator"
+                    href="/projects/unhelpfulcalculator"
+                />
+                <MenuItem name="Tetris" href="/projects/desmostetris" />
+                <MenuItem name="3Desmos" href="/projects/3desmos" />
+            </MenuItem>
+        </nav>
+        <small
+            ><i>
+                Want to chat? Send me an email at contact@khenr.se or find me on
+                discord as khenr!
+            </i></small
+        >
     </div>
 </div>
 <!-- Main page -->
@@ -84,7 +91,7 @@
             align-items: center;
 
             background-color: var(--navbar-bg);
-            
+
             & > header {
                 display: flex;
                 align-items: center;
@@ -115,9 +122,9 @@
                     border: unset;
                     cursor: pointer;
                     aspect-ratio: 1;
-                    height: 2rem;
-                    border: 1px solid var(--menu-item-hover);
-                    &:hover {
+                    height: 40px;
+                    border: 1px solid var(--menu-expand-btn-hover-bg);
+                    &:active {
                         background-color: var(--menu-expand-btn-hover-bg);
                     }
                     & > img {
@@ -131,7 +138,7 @@
                 align-items: center;
                 gap: 1rem;
                 & > nav {
-                width: 100%;
+                    width: 100%;
                 }
                 & > small {
                     color: var(--navbar-fineprint);
@@ -188,7 +195,9 @@
 
                 & > :global(section) {
                     padding: 4rem;
-                    &:not(:first-child) { margin-top: 4rem; }
+                    &:not(:first-child) {
+                        margin-top: 4rem;
+                    }
                 }
             }
         }

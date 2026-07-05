@@ -68,8 +68,13 @@
         aspect-ratio: 1;
         width: 2rem;
         height: 2rem;
-        &:hover {
+        &:active {
             background-color: var(--menu-expand-btn-hover-bg);
+        }
+        @media screen and (min-width: 800px) {
+            &:hover {
+                background-color: var(--menu-expand-btn-hover-bg);
+            }
         }
         & > img {
             width: 100%;
