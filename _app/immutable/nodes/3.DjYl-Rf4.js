@@ -1,0 +1,4 @@
+import{h as e,p as t}from"../chunks/DshsZ34Z.js";import"../chunks/xihTtKlq.js";import"../chunks/BsfnhY1e.js";var n=e(`<section><h1>Projects</h1> <p>This page exists for collecting some projects that I've worked on and feel
+        are interesting enough to deserve mention. Consider it a small list of
+        projects that have either been put here because I enjoyed making them, or
+        because I enjoyed the result.</p> <ul><li><a href="/projects/unhelpfulcalculator">Unhelpful calculator</a></li> <li><a href="/projects/ghostfriend">The Ghost is your Friend</a></li> <li><a href="/projects/3desmos">3Desmos</a></li> <li><a href="/projects/desmostetris">Tetris in Desmos</a></li></ul></section>`);function r(e){t(e,n())}export{r as component};
