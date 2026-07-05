@@ -19,5 +19,7 @@ todo: undo all this when moving from GHP
 - Add file `layout.ts` and export `prerender = true` from it
 - Add a `.nojekyll` file in `/src/static`
 - Add `"deploy": "npm run build && gh-pages -d build -t"` under package.json/scripts
+- Since I use my own domain, I also had to add `/src/static/CNAME` in order to not
+  overwrite it when deploying
 
 (this seems to have also created a gh-pages branch which I may want to delete)
