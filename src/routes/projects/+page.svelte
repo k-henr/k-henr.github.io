@@ -1,3 +1,7 @@
+<script>
+    import LinkWithIcon from "$lib/components/LinkWithIcon.svelte";
+</script>
+
 <section>
     <h1>Projects</h1>
     <p>
@@ -6,18 +10,16 @@
         projects that have either been put here because I enjoyed making them, or
         because I enjoyed the result.
     </p>
-    <ul>
-        <li>
-            <a href="/projects/unhelpfulcalculator">Unhelpful calculator</a>
-        </li>
-        <li>
-            <a href="/projects/ghostfriend">The Ghost is your Friend</a>
-        </li>
-        <li>
-            <a href="/projects/3desmos">3Desmos</a>
-        </li>
-        <li>
-            <a href="/projects/desmostetris">Tetris in Desmos</a>
-        </li>
-    </ul>
+    <LinkWithIcon src="/icons/calculator.svg" href="/projects/unhelfulcalculator"
+        >Unhelpful calculator</LinkWithIcon
+    >
+    <LinkWithIcon src="/icons/web-globe.svg" href="/projects/ghostfriend"
+        >The Ghost is your Friend</LinkWithIcon
+    >
+    <LinkWithIcon src="/icons/desmos.ico" href="/projects/3desmos"
+        >3Desmos</LinkWithIcon
+    >
+    <LinkWithIcon src="/icons/desmos.ico" href="/projects/desmostetris"
+        >Tetris is Desmos</LinkWithIcon
+    >
 </section>

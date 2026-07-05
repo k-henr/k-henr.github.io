@@ -158,7 +158,6 @@
                 & > :global(section) {
                     background-color: var(--article-bg);
                     padding: 1rem;
-                    font-size: larger;
                     &:not(:first-child) {
                         margin-top: 1rem;
                     }
@@ -169,6 +168,9 @@
 
     :global(a) {
         color: var(--links);
+        &:active {
+            color: var(--links-active);
+        }
     }
 
     @media screen and (max-width: 800px) {
@@ -195,6 +197,7 @@
 
                 & > :global(section) {
                     padding: 4rem;
+                    font-size: larger;
                     &:not(:first-child) {
                         margin-top: 4rem;
                     }
@@ -220,5 +223,6 @@
         --menu-item-hover: #5a5a5a;
 
         --links: #0b4e85;
+        --links-active: #072f51;
     }
 </style>
