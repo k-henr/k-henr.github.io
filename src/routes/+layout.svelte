@@ -69,7 +69,7 @@
     <!-- script for setting email address to non-obfuscated version -->
     <script>
         let text = "ees.rneehk" + "@" + "tcatnoc";
-        text = text.split("").reverse().join("").replace("ee", "e");
+        text = text.split("").reverse().join("").replaceAll("ee", "e");
         for (const e of document.getElementsByClassName("email")) e.innerText = text;
     </script>
 </main>
