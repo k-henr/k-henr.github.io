@@ -10,7 +10,7 @@
         projects that have either been put here because I enjoyed making them, or
         because I enjoyed the result.
     </p>
-    <LinkWithIcon src="/icons/calculator.svg" href="/projects/unhelfulcalculator"
+    <LinkWithIcon src="/icons/calculator.svg" href="/projects/unhelpfulcalculator"
         >Unhelpful calculator</LinkWithIcon
     >
     <LinkWithIcon src="/icons/web-globe.svg" href="/projects/ghostfriend"
