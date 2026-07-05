@@ -21,8 +21,7 @@
     Email: mail@khenr.se<br />
     <p>
         I'm a swede who likes programming and mathematics. I'm also currently (as of
-        summer 2026) also trying to learn more about electronics and breadboard
-        circuits.
+        summer 2026) trying to learn more about electronics and breadboard circuits.
     </p>
     <p>
         To my memory, I have programmed since when I was around 8 years old, mostly

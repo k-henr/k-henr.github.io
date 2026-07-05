@@ -59,13 +59,13 @@
         have time to catch. I also made a level editor.
     </p>
     <LinkWithIcon
-        href="https://k-henr.github.io/genericStrategyGame/index.html"
+        href="https://khenr.se/genericStrategyGame/index.html"
         src="/Icons/webGlobe.svg"
     >
         Generic Strategy Game
     </LinkWithIcon>
     <LinkWithIcon
-        href="https://k-henr.github.io/genericStrategyGame/levelBuilder.html"
+        href="https://khenr.se/genericStrategyGame/levelBuilder.html"
         src="/Icons/webGlobe.svg"
     >
         Generic Strategy Game - level editor

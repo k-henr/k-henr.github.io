@@ -26,7 +26,7 @@
     />
     <p>Link:</p>
     <LinkWithIcon
-        href="https://k-henr.github.io/theGhostIsYourFriend/index.html"
+        href="https://khenr.se/theGhostIsYourFriend/index.html"
         src="/icons/web-globe.svg"
         target="_blank"
     >

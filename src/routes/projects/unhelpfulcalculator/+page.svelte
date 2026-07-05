@@ -19,7 +19,7 @@
     <p>Link:</p>
     <LinkWithIcon
         src="/icons/calculator.svg"
-        href="https://k-henr.github.io/unhelpfulcalculator"
+        href="https://khenr.se/unhelpful-calculator"
         target="_blank">Unhelpful calculator</LinkWithIcon
     >
     <h2>List of supported keywords</h2>
