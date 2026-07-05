@@ -1,6 +1,7 @@
 <script lang="ts">
     import favicon from "$lib/assets/favicon.ico";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import { reverse } from "node:dns";
 
     let { children } = $props();
 
@@ -51,8 +52,10 @@
         </nav>
         <small
             ><i>
-                Want to chat? Send me an email at contact@khenr.se or find me on
-                discord as khenr!
+                Want to chat? Send me an email at <span class="email"
+                    >contact [at] khenr [dot] se (sorry for the obfuscation - bots
+                    abound!)</span
+                > or find me on discord as khenr!
             </i></small
         >
     </div>
@@ -62,6 +65,13 @@
     <article>
         {@render children()}
     </article>
+
+    <!-- script for setting email address to non-obfuscated version -->
+    <script>
+        let text = "ees.rneehk" + "@" + "tcatnoc";
+        text = text.split("").reverse().join("").replace("ee", "e");
+        for (const e of document.getElementsByClassName("email")) e.innerText = text;
+    </script>
 </main>
 
 <style>

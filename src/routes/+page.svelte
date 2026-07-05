@@ -18,7 +18,7 @@
     <h1>About me</h1>
     Github: k-henr<br />
     Discord: k_henr<br />
-    Email: mail@khenr.se<br />
+    Email: <span class="email">contact [at] khenr [dot] se</span><br />
     <p>
         I'm a swede who likes programming and mathematics. I'm also currently (as of
         summer 2026) trying to learn more about electronics and breadboard circuits.
