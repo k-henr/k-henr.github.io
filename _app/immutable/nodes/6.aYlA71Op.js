@@ -1,4 +1,4 @@
-import{A as e,B as t,O as n,V as r,g as i,h as a,p as o}from"../chunks/DshsZ34Z.js";import"../chunks/xihTtKlq.js";import"../chunks/BsfnhY1e.js";import{t as s}from"../chunks/WoWyOXHp.js";import{t as c}from"../chunks/BMX0ALej.js";var l=a(`<section><h1>The Ghost is your Friend</h1> <p>This project was one of two examinating projects that I made in a high school
+import{H as e,V as t,g as n,h as r,j as i,k as a,p as o}from"../chunks/DltmSIjW.js";import"../chunks/xihTtKlq.js";import"../chunks/BVhQc0cT.js";import{t as s}from"../chunks/Dkq1emlV.js";import{t as c}from"../chunks/BDzDgXrd.js";var l=r(`<section><h1>The Ghost is your Friend</h1> <p>This project was one of two examinating projects that I made in a high school
         programming course. I wasn't quite able to get the second one finished by the
         end of the course, which is why I'm not linking it here, but we were only
         really supposed to make one anyways. It's made on a single canvas screen
@@ -11,4 +11,4 @@ import{A as e,B as t,O as n,V as r,g as i,h as a,p as o}from"../chunks/DshsZ34Z.
         away and weave between the enemies and projectiles, and that wasn't very fun.
         So I added the ghost: A slow companion that you had to stay near in order to
         do any meaningful damage. This solved the issue, and also let me add a few
-        interesting ghost-related abilities.</p></section>`);function u(a){var u=l(),d=e(n(u),6);c(d,{src:`/files/ghostfriend/gameplay.png`,alt:`What I'm sure was a thrilling moment of gameplay.`,caption:`Gameplay example.`}),s(e(d,4),{href:`https://khenr.se/theGhostIsYourFriend/index.html`,src:`/icons/web-globe.svg`,target:`_blank`,children:(e,n)=>{t(),o(e,i(`The Ghost is your Friend`))},$$slots:{default:!0}}),t(2),r(u),o(a,u)}export{u as component};
+        interesting ghost-related abilities.</p></section>`);function u(r){var u=l(),d=i(a(u),6);c(d,{src:`/files/ghostfriend/gameplay.png`,alt:`What I'm sure was a thrilling moment of gameplay.`,caption:`Gameplay example.`}),s(i(d,4),{href:`https://khenr.se/theGhostIsYourFriend/index.html`,src:`/icons/web-globe.svg`,target:`_blank`,children:(e,r)=>{t(),o(e,n(`The Ghost is your Friend`))},$$slots:{default:!0}}),t(2),e(u),o(r,u)}export{u as component};
