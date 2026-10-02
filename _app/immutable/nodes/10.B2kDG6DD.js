@@ -31,4 +31,4 @@ import{A as e,H as t,M as n,U as r,g as i,j as a,m as o}from"../chunks/xifKf3q5.
         eventually I landed on .se. There were a few reasons for that, but mainly I
         chose it because the organization that manages these is nicer than the .com
         one. They also have a maximum price for the domain, so while the "rent" on a
-        .com domain could theoretically rise arbitrarily high <!>, .se-domains have more bureucratic protections.</p></section>`,1);function u(i){var u=l(),d=n(a(u),4),f=n(e(d),4);s(n(e(f)),{children:(e,n)=>{t();var r=c();t(2),o(e,r)},$$slots:{default:!0}}),t(),r(f),r(d),o(i,u)}export{u as component};
+        .com domain could theoretically rise arbitrarily high <!>, .se-domains have more bureaucratic protections.</p></section>`,1);function u(i){var u=l(),d=n(a(u),4),f=n(e(d),4);s(n(e(f)),{children:(e,n)=>{t();var r=c();t(2),o(e,r)},$$slots:{default:!0}}),t(),r(f),r(d),o(i,u)}export{u as component};
