@@ -49,7 +49,7 @@
         <li>TAU</li>
         <li>PI</li>
         <li>
-            <a href="https://xkcd.com/1292/">PAU</a>
+            <a href="https://xkcd.com/1292/" target="_blank">PAU</a>
         </li>
         <li>E</li>
         <li>PHI</li>

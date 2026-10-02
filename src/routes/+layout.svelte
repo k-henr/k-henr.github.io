@@ -52,6 +52,7 @@
                 <MenuItem name="Tetris" href="/projects/desmostetris" />
                 <MenuItem name="3Desmos" href="/projects/3desmos" />
             </MenuItem>
+            <MenuItem name="AI statement" href="/ai"></MenuItem>
             <MenuItem name="&quot;Stack&quot;" href="/stack"></MenuItem>
         </nav>
         <small
