@@ -41,7 +41,4 @@
         <li>A little SvelteKit</li>
         <li>and a few more</li>
     </ul>
-    <p>
-        See some of my projects <a href="/projects">here</a>.
-    </p>
 </section>

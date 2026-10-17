@@ -64,6 +64,6 @@
             would have to follow to stay alive. I'd assume that there would be some
             legal trouble for Verisign if they tried, but I prefer to interact with a
             nonprofit either way.</Footnote
-        >, .se-domains have more bureucratic protections.
+        >, .se-domains have more bureaucratic protections.
     </p>
 </section>
